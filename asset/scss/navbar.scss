@@ -1,0 +1,44 @@
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    #logo{
+        width: 80px;
+        height: 100px;
+    }
+    .nav-links{
+        display: flex;
+        text-align: center;
+         ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+                 li {
+                margin: 0 25px;
+                font-size: 20px;
+                a{
+                    text-decoration: none;
+                }
+            }
+    }
+}
+    .menu-burger{
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        width: 35px;
+        }
+        #icon{
+            width: 30px;
+            height: 30px;
+        }
+    }
+    nav a {
+        margin: 0 10px;
+        color: var(--secondary-color);
+        text-decoration: none;
+    }
+    

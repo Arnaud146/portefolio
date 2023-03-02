@@ -1,0 +1,100 @@
+@import "variable.scss";
+@import "navbar.scss";
+@import "form.scss";
+@import "scroll.scss";
+@import "media-queries.scss";
+@import "card.scss";
+@import "project.scss";
+@import "footer.scss";
+@import "share.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Libre+Baskerville:ital@0;1&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    cursor: none;
+}
+:root{
+    --primary-color: #332f2f;
+    --secondary-color: #fafafa;
+}
+.light-theme{
+    --primary-color: #fafafa;
+    --secondary-color: #332f2f;
+}
+
+.loader{
+        height: 10px;
+        background-color: var(--primary-color);
+        position: absolute;
+        z-index: 1000;
+      }
+
+//CURSOR
+
+.inner-cursor{
+    position: fixed;
+    left:10px;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    background: var(--secondary-color);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.5s, height 0.5s;
+    
+}   
+.outer-cursor{
+    position: fixed;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: 0.1s;
+}
+.grow{
+    width: 25px;
+    height: 25px;
+    transition: width 0.5s, height 0.5s;
+}
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    display: none;
+    /*.hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1 ease;
+    }
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }*/
+}
+// POLICE
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Libre Baskerville', serif;
+}
+p, a{
+    font-family: 'Lato', sans-serif;
+}
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+    background: var(--primary-color);
+     h2 {
+        color: var(--secondary-color);
+    }
+}

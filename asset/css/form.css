@@ -1,0 +1,48 @@
+#section-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#section-contact .contact {
+  width: 90%;
+  max-width: 600px;
+}
+#section-contact .contact .input-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+#section-contact .contact .input-group .input-contact {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  background: transparent;
+  font-size: 15px;
+}
+#section-contact .contact .input-group .label-contact {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  color: var(--secondary-color);
+  cursor: text;
+  transition: 0.2s;
+}
+#section-contact .contact .input-group .input-contact:focus ~ .label-contact,
+#section-contact .contact .input-group .input-contact:valid ~ .label-contact,
+#section-contact .contact .input-group textarea:focus ~ label,
+#section-contact .contact .input-group textarea:valid ~ label {
+  top: -35px;
+  font-size: 14px;
+}
+#section-contact .contact #send {
+  padding: 10px 0;
+  color: var(--secondary-color);
+  outline: none;
+  background: transparent;
+  border: 1px solid var(--secondary-color);
+  width: 100%;
+  cursor: pointer;
+}

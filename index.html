@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnaud SCHMIDT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/5ef832505e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="asset/css/app.min.css">
+  </head>
+<body>
+    <div class="loader"></div>
+    <div class="inner-cursor"></div>
+    <div class="outer-cursor"></div>
+      <div class="container">
+<header>
+    <!--DEBUT NAVBAR -->
+    <nav class="navbar">
+        <img src="asset/img/logo-blanc (1).webp" id="logo">
+        <div class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">A propos</a></li>
+                <li><a href="#section-skills">Compétences</a></li>
+                <li><a href="#section-project">Projet</a></li>
+                <li><a href="#section-contact">Contact</a></li>
+            </ul>
+            <img src="asset/img/sun.png" alt="bouton theme sombre" id="icon">
+        </div>
+        <img src="asset/menu-btn.png" alt="menu burger" class="menu-burger">
+    </nav>
+    <!-- FIN NAVBAR -->
+</header>
+    <!-- DEBUT INDICATEUR SCROLL -->
+        <div class="scroll-indicator">
+            <a href="#home" class="active" data-section="Home"> </a>
+            <a href="#about"  data-section="A propos"></a>
+            <a href="#section-skills"  data-section="Compétences"></a>
+            <a href="#section-project"  data-section="Projet"></a>
+            <a href="#section-contact"  data-section="Contact"></a>
+      <!-- FIN INDICATEUR SCROLL -->
+        <div class="arrow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </div>
+        </div>
+        <!-- DEBUT BOUTON PARTAGE-->
+          <div class="share-container">
+            <button class="share-btn">
+                <i class="fas fa-share-alt"></i>
+            </button>
+            <div class="share-options">
+                <p class="title">share</p>
+                <div class="social-media">
+                    <button class="social-media-btn"><i class="fab fa-whatsapp"></i></button>
+                    <button class="social-media-btn"><i class="fab fa-instagram"></i></button>
+                    <button class="social-media-btn"><i class="fab fa-twitter"></i></button>
+                    <button class="social-media-btn"><i class="fab fa-facebook-f"></i></button>
+                    <button class="social-media-btn"><i class="fab fa-linkedin-in"></i></button>
+                </div>
+                <div class="link-container">
+                    <p class="link">https://example.com/share</p>
+                    <button class="copy-btn">copy</button>
+                </div>
+            </div>
+        </div>
+        <!--FIN BOUTON PARTAGE -->
+
+        <!--DEBUT ACCUEIL -->
+    <section id="home"  data-spy>
+      
+    </section>
+        <!--FIN ACCUEIL -->
+        <!-- DEBUT PRESENTATION -->
+    <section id="about"  data-spy>
+      <h2>A propos</h2>
+        
+    </section>
+        <!-- FIN PRESENTATION -->
+        <!-- DEBUT COMPETENCES -->
+        <h2>Compétences</h2>
+    <section id="section-skills"  data-spy class="hidden">
+       
+      <div class="cards-list">
+            <div class="card 1">
+                <div class="card_image">
+                   <img src="#" />
+                </div>
+                <div class="card_title title-white">
+                <p></p>
+              </div>
+            </div>
+            
+              <div class="card 2">
+                <div class="card_image">
+                  <img src="#" />
+                </div>
+              <div class="card_title title-white">
+                <p></p>
+              </div>
+            </div>
+            
+            <div class="card 3">
+              <div class="card_image">
+                <img src="#" />
+              </div>
+              <div class="card_title">
+                <p></p>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIN COMPETENCES -->
+    <!-- DEBUT PROJET -->
+    <h2>Mes projets</h2>
+    <section id="section-project"  data-spy class="hidden">
+      
+        <div class="flip flip-vertical">
+            <div class="front">
+               <h1 class="text-shadow"></h1>
+            </div>
+            <div class="back">
+               <h2></h2>
+               <p></p>
+            </div>
+        </div>
+        <div class="flip flip-vertical">
+            <div class="front">
+               <h1 class="text-shadow"></h1>
+            </div>
+            <div class="back">
+               <h2></h2>
+               <p>.</p>
+            </div>
+        </div>
+        <div class="flip flip-vertical">
+          <div class="front">
+             <h1 class="text-shadow"></h1>
+          </div>
+          <div class="back">
+             <h2></h2>
+             <p>.</p>
+          </div>
+      </div>
+    </section>
+    <!-- FIN PROJET -->
+    <!-- DEBUT CONTACT-->
+    <h2>Contact</h2>
+    <section id="section-contact"  data-spy class="hidden">
+      
+            
+            <form class="contact" method="post" action="contact.php">
+                <div class="input-group">
+                    <input type="text" required id="name" class="input-contact" name="name">
+                    <label for="name" class="label-contact"><i class="fa-solid fa-user"></i> Votre nom</label>
+                </div>
+                <div class="input-group" >
+                    <input type="text" required id="sujet" class="input-contact" name="sujet">
+                    <label for="sujet" class="label-contact"><i class="fa-solid fa-magnifying-glass"></i>Sujet</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required id="email" class="input-contact" name="email">
+                    <label for="email" class="label-contact"><i class="fa-solid fa-envelope"></i>Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" rows="8" required class="input-contact" name="message"></textarea>
+                    <label for="message" class="label-contact"><i class="fa-solid fa-comment"></i>Votre message</label>
+                </div>
+                <button type="submit" id="send">ENVOYEZ <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+    </section>
+    <!--FIN CONTACT -->
+    <!--DEBUT  FOOTER-->
+    <footer>
+    <div class="footer">
+        <div id="button"></div>
+      <div id="footer-container">
+        <p>je suis le conteneur</p>
+
+      <div id="cont">
+      <div class="footer_center">
+      </div>
+      </div>
+      </div>
+      </div>
+    </footer>
+    <!-- FIN DU FOOTER -->
+    <script src="asset/js/script.js" defer></script>
+</body>
+</html>
