@@ -544,6 +544,22 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
   font-size: 16px;
 }
 
+#section-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section-home #titre {
+  font-size: clamp(2rem, 7vw, 7rem);
+  color: var(--secondary-color);
+  padding: 0rem clamp(1rem, 2vw, 3rem);
+  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+}
+#section-home #titre:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
 *,
 *::after,
 *::before {
